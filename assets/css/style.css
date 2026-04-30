@@ -52,9 +52,11 @@ body {
 
 .nav-wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 1rem 0;
+    gap: 1rem;
 }
 
 .logo a {
@@ -74,6 +76,8 @@ body {
     list-style: none;
     gap: 2rem;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nav-link {
