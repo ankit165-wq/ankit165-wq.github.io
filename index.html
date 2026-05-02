@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,8 +30,8 @@
 
         /* NAVBAR */
         .navbar {
-            background: var(--white);
-            border-bottom: 1px solid #e5e7eb;
+            background: var(--teal-main);
+            border-bottom: none;
         }
 
         .nav-wrapper {
@@ -48,9 +49,9 @@
         }
 
         .nav-link {
-            text-decoration: none;
-            color: var(--dark);
-            padding: 10px;
+            
+            color: var(--white);
+            
         }
 
         .nav-link.active {
@@ -59,18 +60,18 @@
         }
 
         .logo a {
-            text-decoration: none;
-            color: var(--teal-main);
+            
+            color: var(--white);
             font-weight: bold;
             font-size: 50px;
         }
 
         /* HERO */
         .hero {
-            background: linear-gradient(135deg, var(--teal-main), var(--teal-accent));
-            color: var(--white);
+            background: #ededed;
+            color: var(--dark);
             padding: 80px 0;
-            text-align: center;
+            text-align: left;
         }
 
         .btn {
@@ -162,47 +163,45 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-    <div class="container">
-        <h1>Hi, I'm Ankit</h1>
-        <p> A 3rd year Research scholar</p>
-        <p>Explore my work, research, and projects</p>
+  <section class="hero">
+    <div class="container" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
 
-        <a href="#" class="btn btn-primary">View My Work</a>
-        
+        <!-- LEFT: PROFILE IMAGE -->
+        <div style="flex: 1; text-align: center;">
+            <img src="assets/profile.jpg" alt="Ankit" 
+                 style="width: 250px; height: 250px; object-fit: cover; border-radius: 10px;">
+        </div>
+
+        <!-- RIGHT: TEXT -->
+        <div style="flex: 2;">
+            <h1>Ankit Yadav</h1>
+
+            <p>
+                I am a 3rd year research scholar at Indian Institute of Technology Indore,
+                working in the field of Metallurgical Engineering and Materials Science.
+            </p>
+
+            <p>
+                My research focuses on advanced materials for energy storage applications,
+                particularly in supercapacitors and metal-organic frameworks (MOFs).
+            </p>
+
+            <a href="pages/research.html" class="btn btn-primary">View My Work</a>
+        </div>
+
     </div>
 </section>
 
 <!-- QUICK LINKS -->
 <section class="quick-links">
     <div class="container">
-        <h2>Quick Navigation</h2>
+        <h2>Work Gallary</h2>
 
         <div class="links-grid">
 
-            <div class="link-card">
-                <h3>📄 CV</h3>
-                <p>Download or view my curriculum vitae</p>
-                <a href="#" class="link">View CV →</a>
-            </div>
+            
 
-            <div class="link-card">
-                <h3>🔬 Research</h3>
-                <p>Explore my research interests and papers</p>
-                <a href="#" class="link">View Research →</a>
-            </div>
-
-            <div class="link-card">
-                <h3>💻 Projects</h3>
-                <p>Check out my latest projects</p>
-                <a href="#" class="link">View Projects →</a>
-            </div>
-
-            <div class="link-card">
-                <h3>📝 Blog</h3>
-                <p>Read my notes and articles</p>
-                <a href="#" class="link">View Blog →</a>
-            </div>
+            
 
         </div>
     </div>
