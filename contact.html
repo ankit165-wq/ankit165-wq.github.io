@@ -5,15 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Ankit</title>
 
-    <!-- Your existing CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
 
+    <!-- ✅ FORCE SAME DESIGN AS HOMEPAGE -->
     <style>
         :root {
             --teal-main: #568687;
             --white: #ffffff;
         }
 
+        /* NAVBAR SAME AS HOME */
+        .navbar {
+            background: var(--teal-main) !important;
+        }
+
+        .nav-link {
+            color: var(--white) !important;
+        }
+
+        .logo a {
+            color: var(--white) !important;
+        }
+
+        /* FOOTER SAME AS HOME */
         .footer {
             background: var(--teal-main) !important;
             color: var(--white) !important;
@@ -52,7 +66,6 @@
         <h1>Contact Information</h1>
 
         <div style="margin-top: 20px; line-height: 1.8;">
-
             <h3>📍 Address</h3>
             <p>
                 Indian Institute of Technology, Indore<br>
@@ -66,30 +79,25 @@
                 <strong>Ankit Yadav</strong><br>
                 <a href="mailto:ayadav@iiti.ac.in">ayadav@iiti.ac.in</a>
             </p>
-
         </div>
     </div>
 </section>
 
 <!-- Footer -->
 <footer class="footer">
-    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
 
-        <!-- LEFT -->
         <p>© 2026 Ankit. All rights reserved.</p>
 
-        <!-- CENTER -->
         <div class="footer-links">
             <a href="#">Contact</a>
             <a href="#">Privacy</a>
             <a href="#">Terms</a>
         </div>
 
-        <!-- RIGHT (LinkedIn) -->
         <div>
             <a href="https://www.linkedin.com/in/ankit-yadav-880810240/" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-                     alt="LinkedIn"
                      style="width: 30px;">
             </a>
         </div>
