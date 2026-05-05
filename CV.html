@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ankit Yadav - CV</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    background: #ffffff;
+    color: #000;
+}
+
+/* CONTAINER */
+.cv-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* HEADER */
+.header {
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* ✅ NEW HEADER LAYOUT */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-text {
+    max-width: 75%;
+}
+
+.header-image img {
+    width: 110px;
+    height: 130px;
+    object-fit: cover;
+    border: 1px solid #000;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* GRID */
+.cv-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+/* SECTION */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+/* TEXT */
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+ul {
+    margin: 5px 0;
+    padding-left: 18px;
+}
+
+li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* LINKS */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* DOWNLOAD */
+.download {
+    margin-top: 10px;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="cv-container">
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <div class="header-content">
+
+            <!-- TEXT -->
+            <div class="header-text">
+                <h1>Ankit Yadav</h1>
+                <p>PhD Research Scholar, IIT Indore</p>
+                <p>
+                    Email: phd2301205006@iiti.ac.in | onlyankit165@gmail.com<br>
+                    Phone: +91 9111339734
+                </p>
+                <p>
+                    ORCID: <a href="https://orcid.org/0009-0002-6813-9247" target="_blank">
+                    https://orcid.org/0009-0002-6813-9247</a>
+                </p>
+
+                <p class="download">
+                    <a href="../assets/cv/Ankit_CV.pdf" download>Download CV (PDF)</a>
+                </p>
+            </div>
+
+            <!-- ✅ IMAGE -->
+            <div class="header-image">
+                <img src="../images/profile.jpg" alt="Ankit">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- GRID -->
+    <div class="cv-grid">
+
+        <!-- LEFT COLUMN -->
+        <div>
+
+            <div class="section">
+                <h2>Research Interests</h2>
+                <p>
+                    Metal Organic Frameworks (MOFs), Supercapacitors, 
+                    Energy Storage Devices
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Skills</h2>
+                <p>Python</p>
+            </div>
+
+            <div class="section">
+                <h2>Academic Activities</h2>
+                <ul>
+                    <li>Scientific Communication Workshop – NPL Delhi</li>
+                    <li>Synchrotron Radiation Talk – RRCAT Indore</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <p><strong>Ph.D.</strong> – IIT Indore (Since Sept 2023)</p>
+                <p><strong>M.Sc. Physics</strong> – DAVV Indore (CGPA: 7.79)</p>
+                <p><strong>B.Sc. Physics</strong> – Madhav Science College (62.79%)</p>
+                <p><strong>GATE (Physics)</strong> – 2023</p>
+            </div>
+
+            <div class="section">
+                <h2>Master’s Project</h2>
+                <p>
+                    Structural study of Barium Titanate (BaTiO₃) thin films 
+                    using pulsed laser deposition (UGC–DAE CSR Indore).
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Publications</h2>
+
+                <p>
+                    1. Hierarchical nanoflakes anchored mesoporous Ni MOF microspheres 
+                    for electrocatalytic water splitting. 
+                    <em>International Journal of Hydrogen Energy (2025)</em>
+                </p>
+
+                <p>
+                    2. Ni-doped LaFeO₃ microspheres for photocatalytic degradation. 
+                    <em>Chemical Science Advances (2024)</em>
+                </p>
+
+                <p>
+                    3. NiCo₂S₄ electrodes for high-performance supercapacitors. 
+                    <em>Journal of Energy Storage (Under Review)</em>
+                </p>
+
+            </div>
+
+            <div class="section">
+                <h2>Supervisor</h2>
+                <p>
+                    Prof. Rupesh S. Devan<br>
+                    Department of MEMS, IIT Indore<br>
+                    Email: rupesh@iiti.ac.in
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
