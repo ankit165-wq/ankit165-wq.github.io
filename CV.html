@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,51 +6,17 @@
 <title>Ankit Yadav - CV</title>
 
 <style>
- .navbar {
-        background: var(--teal-main);
-    }
 
-    .nav-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 0;
-    }
+/* ROOT COLORS */
+:root {
+    --teal-main: #568687;
+    --teal-accent: #58687a;
+    --light-blue: #cde1ec;
+    --dark: #1f2933;
+    --white: #ffffff;
+}
 
-    .nav-menu {
-        list-style: none;
-        display: flex;
-        gap: 20px;
-        margin: 0;
-    }
-
-    .nav-link {
-        color: var(--white);
-        text-decoration: none;
-    }
-
-    .nav-link.active {
-        color: var(--white);
-        font-weight: bold;
-    }
-
-    .logo a {
-        color: var(--white);
-        font-weight: bold;
-        font-size: 50px;
-        text-decoration: none;
-    }
-.footer {
-       background: #568687;
-       color: white;
-       padding: 20px 0;
-    }
-
-    .footer-links a {
-        color: var(--white);
-        margin: 0 10px;
-        text-decoration: none;
-    }
+/* BODY */
 body {
     margin: 0;
     font-family: "Times New Roman", serif;
@@ -59,7 +24,51 @@ body {
     color: #000;
 }
 
-/* CONTAINER */
+/* GENERAL CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+    background: var(--teal-main);
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.logo a {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+/* CV CONTAINER */
 .cv-container {
     max-width: 1000px;
     margin: 40px auto;
@@ -73,17 +82,20 @@ body {
     margin-bottom: 20px;
 }
 
-/* ✅ NEW HEADER LAYOUT */
+/* HEADER FLEX */
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
+/* HEADER TEXT */
 .header-text {
     max-width: 75%;
 }
 
+/* PROFILE IMAGE */
 .header-image img {
     width: 110px;
     height: 130px;
@@ -91,11 +103,13 @@ body {
     border: 1px solid #000;
 }
 
+/* NAME */
 .header h1 {
     margin: 0;
     font-size: 28px;
 }
 
+/* PARAGRAPH */
 .header p {
     margin: 5px 0;
     font-size: 14px;
@@ -149,28 +163,83 @@ a {
     margin-top: 10px;
     font-size: 14px;
 }
+
+/* FOOTER */
+.footer {
+    background: var(--teal-main);
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-content {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .header-text {
+        max-width: 100%;
+    }
+
+    .header-image {
+        text-align: center;
+        width: 100%;
+    }
+}
+
 </style>
 </head>
 
 <body>
+
+<!-- NAVBAR -->
 <nav class="navbar">
     <div class="container">
+
         <div class="nav-wrapper">
+
             <div class="logo">
-                <a href="#">Ankit</a>
+                <a href="../index.html">Ankit</a>
             </div>
 
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="pages/CV.html" class="nav-link">CV</a></li>
-                <li><a href="pages/research.html" class="nav-link">Research</a></li>
-                <li><a href="pages/projects.html" class="nav-link">Projects</a></li>
-                <li><a href="pages/blog.html" class="nav-link">Blog/Notes</a></li>
-                <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="CV.html" class="nav-link active">CV</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link">Blog/Notes</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+
         </div>
+
     </div>
 </nav>
+
+<!-- CV CONTENT -->
 <div class="cv-container">
 
     <!-- HEADER -->
@@ -180,23 +249,35 @@ a {
 
             <!-- TEXT -->
             <div class="header-text">
+
                 <h1>Ankit Yadav</h1>
-                <p>PhD Research Scholar, IIT Indore</p>
+
                 <p>
-                    Email: phd2301205006@iiti.ac.in | onlyankit165@gmail.com<br>
+                    PhD Research Scholar, IIT Indore
+                </p>
+
+                <p>
+                    Email: phd2301205006@iiti.ac.in | onlyankit165@gmail.com
+                    <br>
                     Phone: +91 9111339734
                 </p>
+
                 <p>
-                    ORCID: <a href="https://orcid.org/0009-0002-6813-9247" target="_blank">
-                    https://orcid.org/0009-0002-6813-9247</a>
+                    ORCID:
+                    <a href="https://orcid.org/0009-0002-6813-9247" target="_blank">
+                        https://orcid.org/0009-0002-6813-9247
+                    </a>
                 </p>
 
                 <p class="download">
-                    <a href="../assets/cv/Ankit_CV.pdf" download>Download CV (PDF)</a>
+                    <a href="../assets/cv/Ankit_CV.pdf" download>
+                        Download CV (PDF)
+                    </a>
                 </p>
+
             </div>
 
-            <!-- ✅ IMAGE -->
+            <!-- PROFILE IMAGE -->
             <div class="header-image">
                 <img src="../images/profile.jpg" alt="Ankit">
             </div>
@@ -213,19 +294,25 @@ a {
 
             <div class="section">
                 <h2>Research Interests</h2>
+
                 <p>
-                    Metal Organic Frameworks (MOFs), Supercapacitors, 
+                    Metal Organic Frameworks (MOFs),
+                    Supercapacitors,
                     Energy Storage Devices
                 </p>
             </div>
 
             <div class="section">
                 <h2>Skills</h2>
-                <p>Python</p>
+
+                <p>
+                    Python
+                </p>
             </div>
 
             <div class="section">
                 <h2>Academic Activities</h2>
+
                 <ul>
                     <li>Scientific Communication Workshop – NPL Delhi</li>
                     <li>Synchrotron Radiation Talk – RRCAT Indore</li>
@@ -238,49 +325,65 @@ a {
         <div>
 
             <div class="section">
+
                 <h2>Education</h2>
+
                 <p><strong>Ph.D.</strong> – IIT Indore (Since Sept 2023)</p>
+
                 <p><strong>M.Sc. Physics</strong> – DAVV Indore (CGPA: 7.79)</p>
+
                 <p><strong>B.Sc. Physics</strong> – Madhav Science College (62.79%)</p>
+
                 <p><strong>GATE (Physics)</strong> – 2023</p>
+
             </div>
 
             <div class="section">
+
                 <h2>Master’s Project</h2>
+
                 <p>
-                    Structural study of Barium Titanate (BaTiO₃) thin films 
-                    using pulsed laser deposition (UGC–DAE CSR Indore).
+                    Structural study of Barium Titanate (BaTiO₃)
+                    thin films using pulsed laser deposition
+                    (UGC–DAE CSR Indore).
                 </p>
+
             </div>
 
             <div class="section">
+
                 <h2>Publications</h2>
 
                 <p>
-                    1. Hierarchical nanoflakes anchored mesoporous Ni MOF microspheres 
-                    for electrocatalytic water splitting. 
+                    1. Hierarchical nanoflakes anchored mesoporous
+                    Ni MOF microspheres for electrocatalytic water splitting.
                     <em>International Journal of Hydrogen Energy (2025)</em>
                 </p>
 
                 <p>
-                    2. Ni-doped LaFeO₃ microspheres for photocatalytic degradation. 
+                    2. Ni-doped LaFeO₃ microspheres for photocatalytic degradation.
                     <em>Chemical Science Advances (2024)</em>
                 </p>
 
                 <p>
-                    3. NiCo₂S₄ electrodes for high-performance supercapacitors. 
+                    3. NiCo₂S₄ electrodes for high-performance supercapacitors.
                     <em>Journal of Energy Storage (Under Review)</em>
                 </p>
 
             </div>
 
             <div class="section">
+
                 <h2>Supervisor</h2>
+
                 <p>
-                    Prof. Rupesh S. Devan<br>
-                    Department of MEMS, IIT Indore<br>
+                    Prof. Rupesh S. Devan
+                    <br>
+                    Department of MEMS, IIT Indore
+                    <br>
                     Email: rupesh@iiti.ac.in
                 </p>
+
             </div>
 
         </div>
@@ -288,8 +391,12 @@ a {
     </div>
 
 </div>
+
+<!-- FOOTER -->
 <footer class="footer">
-    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+
+    <div class="container"
+         style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
 
         <p>© 2026 Ankit. All rights reserved.</p>
 
@@ -301,12 +408,16 @@ a {
 
         <div>
             <a href="https://www.linkedin.com/in/ankit-yadav-880810240/" target="_blank">
+
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
                      style="width: 30px;">
+
             </a>
         </div>
 
     </div>
+
 </footer>
+
 </body>
 </html>
