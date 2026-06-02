@@ -1,13 +1,38 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ankit Yadav - CV</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blogs or Notes</title>
 
-<style>
- .navbar {
+  <style>
+
+    :root {
+        --teal-main: #568687;
+        --teal-accent: #58687a;
+        --light-blue: #cde1ec;
+        --dark: #1f2933;
+        --white: #ffffff;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: var(--light-blue);
+        color: var(--dark);
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
         background: var(--teal-main);
     }
 
@@ -23,6 +48,7 @@
         display: flex;
         gap: 20px;
         margin: 0;
+        padding: 0;
     }
 
     .nav-link {
@@ -41,10 +67,98 @@
         font-size: 50px;
         text-decoration: none;
     }
-.footer {
+
+    /* BLOG SECTION */
+
+    section{
+      padding:60px 0;
+    }
+
+    .section-title{
+      font-size:36px;
+      margin-bottom:35px;
+      color:teal;
+      position:relative;
+    }
+
+    .section-title::after{
+      content:'';
+      width:80px;
+      height:4px;
+      background:var(--teal-main);
+      position:absolute;
+      left:0;
+      bottom:-10px;
+      border-radius:20px;
+    }
+
+    /* BLOG GRID */
+
+    .blog-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    /* BLOG CARD */
+
+    .blog-card{
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      transition:0.4s;
+      box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .blog-card:hover{
+      transform:translateY(-10px);
+    }
+
+    .blog-card img{
+      width:100%;
+      height:240px;
+      object-fit:cover;
+    }
+
+    .blog-content{
+      padding:22px;
+    }
+
+    .date{
+      font-size:14px;
+      color:#555;
+      margin-bottom:10px;
+    }
+
+    .blog-title{
+      font-size:22px;
+      font-weight:600;
+      margin-bottom:20px;
+      line-height:1.4;
+    }
+
+    .read-btn{
+      display:inline-block;
+      padding:12px 24px;
+      border-radius:6px;
+      background:var(--teal-accent);
+      color:var(--white);
+      font-weight:600;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    .read-btn:hover{
+      opacity:0.9;
+    }
+
+    /* FOOTER */
+
+    .footer {
        background: #568687;
        color: white;
        padding: 20px 0;
+       margin-top: 50px;
     }
 
     .footer-links a {
@@ -52,107 +166,35 @@
         margin: 0 10px;
         text-decoration: none;
     }
-body {
-    margin: 0;
-    font-family: "Times New Roman", serif;
-    background: #ffffff;
-    color: #000;
-}
 
-/* CONTAINER */
-.cv-container {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-}
+    /* RESPONSIVE */
 
-/* HEADER */
-.header {
-    border-bottom: 1px solid #000;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
+    @media(max-width:768px){
 
-/* ✅ NEW HEADER LAYOUT */
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
+      .nav-wrapper{
+        flex-direction:column;
+        gap:20px;
+      }
 
-.header-text {
-    max-width: 75%;
-}
+      .nav-menu{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
 
-.header-image img {
-    width: 110px;
-    height: 130px;
-    object-fit: cover;
-    border: 1px solid #000;
-}
+      .section-title{
+        font-size:28px;
+      }
 
-.header h1 {
-    margin: 0;
-    font-size: 28px;
-}
+      .footer .container{
+        flex-direction:column !important;
+        gap:20px;
+        text-align:center;
+      }
+    }
 
-.header p {
-    margin: 5px 0;
-    font-size: 14px;
-}
-
-/* GRID */
-.cv-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 40px;
-}
-
-/* SECTION */
-.section {
-    margin-bottom: 20px;
-}
-
-.section h2 {
-    font-size: 16px;
-    border-bottom: 1px solid #000;
-    margin-bottom: 10px;
-    padding-bottom: 3px;
-    text-transform: uppercase;
-}
-
-/* TEXT */
-p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 5px 0;
-}
-
-ul {
-    margin: 5px 0;
-    padding-left: 18px;
-}
-
-li {
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-/* LINKS */
-a {
-    color: #000;
-    text-decoration: none;
-}
-
-/* DOWNLOAD */
-.download {
-    margin-top: 10px;
-    font-size: 14px;
-}
-</style>
+  </style>
 </head>
 
-<body>
 <nav class="navbar">
     <div class="container">
         <div class="nav-wrapper">
